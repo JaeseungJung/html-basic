@@ -24,108 +24,146 @@
 
         th {
             background-color: rgb(255, 253, 126);
+
+
+
+
+        }
+
+        /* 
+        tr:nth-child(odd)>td {
+            background-color: gray;
+        } */
+
+        tr>td:nth-child(3) {
+            background-color: rgb(255, 255, 153);
+        }
+
+        tr>td:nth-child(4) {
+            background-color: rgb(255, 255, 153);
+        }
+
+        tr>td:nth-child(5) {
+            background-color: rgb(255, 217, 0);
+        }
+
+        tr>td:nth-child(6) {
+            background-color: rgb(255, 217, 0);
+        }
+
+        tr:nth-child(2)>th:nth-child(3) {
+            background-color: rgb(255, 217, 0);
+        }
+
+        tr:nth-child(2)>th:nth-child(4) {
+            background-color: rgb(255, 217, 0);
         }
     </style>
+
+
 
 
 </head>
 
 <body>
 
-    <h1 align="left" ; style="margin: 1.5ch;"">문제. 열차 시간표를 만드세요.</h1>
+    <h1 align="left" ; style="margin-left: 10ch;" ; "margin-top:30ch">문제. 열차 시간표를 만드세요.</h1>
     <br>
-    <table align=" center" ; style="width: 80%;">
-        <tr>
-            <th rowspan="2" ; style="background-color: white;">출발역</th>
-            <th rowspan="2" ; style="background-color: white;">도착역</th>
-            <th colspan="2">현재운임</th>
-            <!-- <th>현재운임</th> -->
-            <th colspan="2">2022년 중앙선 전 구간 개통 시 <br> 청량리~ 서원주 구간 '준고속 서비스'</th>
-            <!-- <th>2022년 중앙선 전 구간 개통 시 <br> 청량리~ 서원주 구간 '준고속 서비스'</th> -->
-        </tr>
+    <table align="center" ; style="width: 80%;" "margin=5ch;">
+        <thead>
+            <tr>
+                <th rowspan="2" ; style="background-color: white;">출발역</th>
+                <th rowspan="2" ; style="background-color: white;">도착역</th>
+                <th colspan="2">현재운임</th>
+                <!-- <th>현재운임</th> -->
+                <th colspan="2" ; style="background-color: rgb(255, 217, 0);">2022년 중앙선 전 구간 개통 시 <br> 청량리~ 서원주 구간 '준고속
+                    서비스'
+                </th>
+                <!-- <th>2022년 중앙선 전 구간 개통 시 <br> 청량리~ 서원주 구간 '준고속 서비스'</th> -->
+            </tr>
 
-        <tr>
-            <!-- <th>출발역</th> -->
-            <!-- <th>도착역</th> -->
-            <th>일반실(A)</th>
-            <th>우등실</th>
-            <th>일반실(B) </th>
-            <th>우등실</th>
+            <tr>
+                <!-- <th>출발역</th> -->
+                <!-- <th>도착역</th> -->
+                <th>일반실(A)</th>
+                <th>우등실</th>
+                <th style="background-color: rgb(255, 217, 0;"> 일반실(B) </th>
+                <th style="background-color: rgb(255, 217, 0;"> 우등실</th>
 
-        </tr>
+            </tr>
+        </thead>
 
+        <tbody>
+            <tr>
+                <td>청량리</td>
+                <td>원주</td>
+                <td>10,100</td>
+                <td>13,100</td>
+                <td>17,900</td>
+                <td>10,100</td>
+            </tr>
 
+            <tr>
+                <td>양평</td>
+                <td>원주</td>
+                <td>8,400</td>
+                <td>11,400</td>
+                <td>17,900</td>
+                <td>10,100</td>
+            </tr>
 
-        <tr>
-            <td>청량리</td>
-            <td>원주</td>
-            <td>10,100</td>
-            <td>13,100</td>
-            <td>17,900</td>
-            <td>10,100</td>
-        </tr>
+            <tr>
+                <td>원주</td>
+                <td>제천</td>
+                <td>8,400</td>
+                <td>11,400</td>
+                <td>17,900</td>
+                <td>10,100</td>
+            </tr>
 
-        <tr>
-            <td>양평</td>
-            <td>원주</td>
-            <td>8,400</td>
-            <td>11,400</td>
-            <td>17,900</td>
-            <td>10,100</td>
-        </tr>
+            <tr>
+                <td>원주</td>
+                <td>단양</td>
+                <td>10,400</td>
+                <td>11,400</td>
+                <td>17,900</td>
+                <td>10,100</td>
+            </tr>
 
-        <tr>
-            <td>원주</td>
-            <td>제천</td>
-            <td>8,400</td>
-            <td>11,400</td>
-            <td>17,900</td>
-            <td>10,100</td>
-        </tr>
+            <tr>
+                <td>원주</td>
+                <td>풍기</td>
+                <td>10,400</td>
+                <td>13,400</td>
+                <td>10,400</td>
+                <td>13,400</td>
+            </tr>
 
-        <tr>
-            <td>원주</td>
-            <td>단양</td>
-            <td>10,400</td>
-            <td>11,400</td>
-            <td>17,900</td>
-            <td>10,100</td>
-        </tr>
+            <tr>
+                <td>원주</td>
+                <td>영주</td>
+                <td>11,700</td>
+                <td>14,700</td>
+                <td>11,700</td>
+                <td>14,700</td>
+            </tr>
 
-        <tr>
-            <td>원주</td>
-            <td>풍기</td>
-            <td>10,400</td>
-            <td>13,400</td>
-            <td>10,400</td>
-            <td>13,400</td>
-        </tr>
+            <tr>
+                <td>원주</td>
+                <td>안동</td>
+                <td>14,900</td>
+                <td>17,900</td>
+                <td>14,900</td>
+                <td>17,900</td>
+            </tr>
 
-        <tr>
-            <td>원주</td>
-            <td>영주</td>
-            <td>11,700</td>
-            <td>14,700</td>
-            <td>11,700</td>
-            <td>14,700</td>
-        </tr>
-
-        <tr>
-            <td>원주</td>
-            <td>안동</td>
-            <td>14,900</td>
-            <td>17,900</td>
-            <td>14,900</td>
-            <td>17,900</td>
-        </tr>
-
-
-
-
+        </tbody>
 
 
 
-        </table>
+
+
+    </table>
 
 
 
